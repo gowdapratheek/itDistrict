@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logo from '../assets/it-logo.png'
 
 function openNav() {
   const nav = document.getElementById("nav");
@@ -31,7 +32,7 @@ function Header() {
         <div className="bg-[#f1f1f1] w-full h-[12vh] flex items-center justify-between px-4 lg:px-8">
           {/* Logo */}
           <a href="" className="cursor-pointer">
-            <img src="./it-logo.png" alt="Logo" className="h-[2rem]" />
+            <img src={logo} alt="Logo" className="h-[2rem]" />
           </a>
 
           {/* Hamburger Menu for Mobile */}
