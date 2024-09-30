@@ -8,7 +8,7 @@ function openNav() {
 function Header() {
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50">
+      <div className="sticky top-0 left-0 w-full z-50 h-fit">
         {/* Top Bar */}
         <div className="bg-[#dcdcdc] w-full">
           <ul className="flex items-center text-[.8rem] justify-between p-[0.35rem] md:justify-end space-x-4 lg:space-x-8">
@@ -93,7 +93,7 @@ function Header() {
 
         {/* Mobile Navigation */}
         <div
-          className="bg-[#f1f1f1] fixed top-[12vh] right-0 w-[60vw] md:w-[40vw] h-[100vh] flex-col space-y-4 text-lg font-bold pl-8 pt-6 z-50 hidden md:hidden mt-6"
+          className="bg-[#f1f1f1] stickky top-[12vh] right-0 w-[60vw] md:w-[40vw] h-[100vh] flex-col space-y-4 text-lg font-bold pl-8 pt-6 z-50 hidden md:hidden mt-6"
           id="nav"
         >
           <ul className="space-y-4" style={{ color: "#00BCFF" }}>
