@@ -11,7 +11,7 @@ function Header() {
     <header className="sticky top-0 left-0 w-full z-50 bg-white">
       {/* Top Bar */}
       <div className="bg-[#dcdcdc] w-full">
-        <ul className="flex items-center text-sm justify-between p-2 md:justify-end space-x-4 lg:space-x-8">
+        <ul className="flex items-center text-[0.7rem] justify-between p-2 md:justify-end space-x-4 lg:space-x-8">
           <li>
             <a href="/assessment" className="hover:underline">
               IT Assessment

@@ -7,7 +7,7 @@ function App() {
       <div className="flex flex-col justify-between">
         <Header />
         <Home />
-        {/* <Have /> */}
+        <Have />
       </div>
     </>
   );
