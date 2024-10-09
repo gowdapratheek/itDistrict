@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <div className="relative h-[85vh] w-full  bg-[url('./assets/landing-page.jpg')] bg-cover bg-no-repeat bg-center">
-        <div className="absolute inset-0 bg-[#00bbff98] opacity-50 z-0"></div>
+        <div className="absolute inset-0 z-0"></div>
 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-white px-4 text-center">
           <h1 className="text-[2rem] lg:text-[3rem]">
