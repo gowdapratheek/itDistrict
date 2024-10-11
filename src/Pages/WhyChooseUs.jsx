@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
       title: "WE CARE",
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-      color: "bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white",
+      color: "bg-gray-200 text-black",
       hoverColor:
         "hover:bg-gradient-to-r hover:from-[#00BCFF] hover:to-[#007FFF] hover:text-white",
       icon: <Heart className="w-16 h-16" />,

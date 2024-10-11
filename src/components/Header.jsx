@@ -95,7 +95,7 @@ function Header() {
       {/* Mobile Navigation */}
       <nav
         id="nav"
-        className="bg-gray-100 absolute  right-0 w-3/5 md:w-2/5 font-semibold h-screen flex-col space-y-6 text-lg text-[#00BCFF] pl-6 pt-6 hidden lg:hidden"
+        className="bg-gray-100 absolute  right-0 w-3/5 md:w-2/5 font-semibold h-screen flex-col space-y-6 text-lg text-[#00BCFF] pl-6 pt-6 hidden lg:hidden text-center"
       >
         <ul className="space-y-6">
           <li>
@@ -103,26 +103,32 @@ function Header() {
               About Us
             </a>
           </li>
+          <hr className="w-[90%] m-0 p-0" />
+
           <li>
             <a href="/services" className="">
               Services
             </a>
           </li>
+          <hr className="w-[90%] m-0 p-0" />
           <li>
             <a href="/industries" className="">
               Industries
             </a>
           </li>
+          <hr className="w-[90%] m-0 p-0" />
           <li>
             <a href="/locations" className="">
               Areas We Serve
             </a>
           </li>
+          <hr className="w-[90%] m-0 p-0" />
           <li>
             <a href="/contact" className="">
               Contact Us
             </a>
           </li>
+          <hr className="w-[90%] m-0 p-0" />
         </ul>
         <Button
           href="/login"

@@ -30,10 +30,10 @@ const Have = () => {
   return (
     <div className="flex flex-col items-center mx-auto w-[90vw] p-4 bg-[#d9d9d9] my-4">
       <div className="w-full h-full bg-white shadow-lg border p-4 lg:flex lg:flex-row lg:items-center lg:justify-between">
-        <div className="grid grid-cols-2 gap-4 lg:gap-6 lg:w-1/2">
+        <div className="grid grid-cols-2 gap-0 lg:w-1/2">
           <div
             onClick={() => setSelected("dollar")}
-            className={`flex items-center justify-center p-4 transition-all duration-500 ease-in-out rounded-md cursor-pointer bg-gray-200 hover:scale-105 hover:shadow-lg hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] ${
+            className={`flex items-center justify-center p-4 transition-all duration-500 ease-in-out  cursor-pointer bg-gray-200 hover:scale-105 hover:shadow-lg hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] ${
               selected === "dollar"
                 ? "bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white"
                 : ""
@@ -43,7 +43,7 @@ const Have = () => {
           </div>
           <div
             onClick={() => setSelected("calendar")}
-            className={`flex items-center justify-center p-4 transition-all duration-500 ease-in-out rounded-md cursor-pointer bg-gray-200 hover:scale-105 hover:shadow-lg hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] ${
+            className={`flex items-center justify-center p-4 transition-all duration-500 ease-in-out  cursor-pointer  hover:scale-105 hover:shadow-lg hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] ${
               selected === "calendar"
                 ? "bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white"
                 : ""
@@ -53,7 +53,7 @@ const Have = () => {
           </div>
           <div
             onClick={() => setSelected("monitor")}
-            className={`flex items-center justify-center p-4 transition-all duration-500 ease-in-out rounded-md cursor-pointer bg-gray-200 hover:scale-105 hover:shadow-lg hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] ${
+            className={`flex items-center justify-center p-4 transition-all duration-500 ease-in-out  cursor-pointer  hover:scale-105 hover:shadow-lg hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] ${
               selected === "monitor"
                 ? "bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white"
                 : ""
@@ -63,7 +63,7 @@ const Have = () => {
           </div>
           <div
             onClick={() => setSelected("thumbsUp")}
-            className={`flex items-center justify-center p-4 transition-all duration-500 ease-in-out rounded-md cursor-pointer bg-gray-200 hover:scale-105 hover:shadow-lg hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] ${
+            className={`flex items-center justify-center p-4 transition-all duration-500 ease-in-out  cursor-pointer bg-gray-200 hover:scale-105 hover:shadow-lg hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] ${
               selected === "thumbsUp"
                 ? "bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white"
                 : ""

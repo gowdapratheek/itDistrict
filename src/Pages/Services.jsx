@@ -96,7 +96,7 @@ const ITServicesGrid = () => {
               {hoveredService === index && (
                 <a
                   href={service.link}
-                  className="absolute inset-0  items-center justify-center bg-[#999999] rounded-lg bg-opacity-80 text-sm font-medium text-[#ffc700] md:flex hidden"
+                  className="absolute inset-0  items-center justify-center bg-black rounded-lg bg-opacity-50 text-md  text-yellow-400 md:flex hidden font-bold"
                 >
                   Learn more &gt;
                 </a>
