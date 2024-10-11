@@ -41,7 +41,7 @@ const Testimonials = () => {
           <img
             src={test} // replace with the actual image path
             alt="Testimonial Image"
-            className="w-full h-auto object-cover rounded-full lg:max-w-[400px] lg:max-h-[400px] mx-auto"
+            className="w-full h-auto object-cover lg:max-w-[400px] lg:max-h-[400px] mx-auto"
           />
         </div>
 

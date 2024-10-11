@@ -4,6 +4,8 @@ import Home from "./components/Home.jsx";
 import WhyChooseUs from "./components/WhyChooseUs.jsx";
 import Services from "./components/Services.jsx";
 import Testimonials from "./components/Testimonials.jsx";
+import AboutUs from "./components/AboutUs.jsx";
+import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <>
@@ -14,6 +16,8 @@ function App() {
         <WhyChooseUs />
         <Services />
         <Testimonials />
+        <AboutUs />
+        <Footer />
       </div>
     </>
   );
