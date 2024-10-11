@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import test from "../assets/testimonails-img.png";
 
 const Testimonials = () => {
   const testimonials = [
@@ -38,7 +39,7 @@ const Testimonials = () => {
         {/* Image (responsive scaling for large screens) */}
         <div className="hidden md:block relative w-full md:w-1/3 mb-8 lg:mb-0">
           <img
-            src="src/assets/testimonails-img.png" // replace with the actual image path
+            src={test} // replace with the actual image path
             alt="Testimonial Image"
             className="w-full h-auto object-cover rounded-full lg:max-w-[400px] lg:max-h-[400px] mx-auto"
           />
