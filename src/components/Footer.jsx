@@ -1,12 +1,15 @@
+import logo from "../assets/it-logo.png";
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#82c5f2] to-[#007FFF] py-12 px-6 md:px-10">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-start space-y-10 md:space-y-0">
-          {/* Left section with logo and address */}
           <div className="flex flex-col md:w-[40vw] md:mr-4 md:items-start space-y-6">
-            <div className="bg-gray-300 w-36 h-36 flex items-center justify-center text-black font-bold">
-              LOGO
+            <div className="">
+              <a href="/" className="cursor-pointer">
+                <img src={logo} alt="IT Company Logo" className="h-20" />
+              </a>
             </div>
             <div className="text-white text-left space-y-1">
               <p>Address line1</p>
@@ -18,11 +21,10 @@ export default function Footer() {
             </button>
           </div>
 
-          {/* Middle section with navigation links */}
           <div className="grid grid-cols-2 lg:grid-cols-3 text-white w-full md:w-auto md:space-y-0 gap-8">
             <div>
               <h3 className="font-bold mb-3">About us</h3>
-              <hr className="w-full md:w-[10vw]" />
+              <hr className="w-full md:w-[10vw] mb-4" />
               <ul className="space-y-2">
                 <li className="cursor-pointer hover:underline">Testimonials</li>
                 <li className="cursor-pointer hover:underline">FAQ</li>
@@ -36,23 +38,26 @@ export default function Footer() {
 
             <div>
               <h3 className="font-bold mb-3">LOCATIONS</h3>
-              <hr className="w-full md:w-[10vw]" />
+              <hr className="w-full md:w-[10vw] mb-4" />
               <ul className="space-y-2">
                 <li className="cursor-pointer hover:underline">Beaumont</li>
                 <li className="cursor-pointer hover:underline">Calgary</li>
-                <li className="cursor-pointer hover:underline">Fort Saskatchewan</li>
+                <li className="cursor-pointer hover:underline">
+                  Fort Saskatchewan
+                </li>
                 <li className="cursor-pointer hover:underline">Leduc</li>
                 <li className="cursor-pointer hover:underline">Red Deer</li>
-                <li className="cursor-pointer hover:underline">Sherwood Park</li>
+                <li className="cursor-pointer hover:underline">
+                  Sherwood Park
+                </li>
                 <li className="cursor-pointer hover:underline">Spruce Grove</li>
                 <li className="cursor-pointer hover:underline">St. Albert</li>
               </ul>
             </div>
 
-            {/* Updated Services Section */}
             <div className="col-span-2 md:col-span-1 mt-4 md:mt-0">
               <h3 className="font-bold mb-4 text-center">SERVICES</h3>
-              <hr className="w-full" />
+              <hr className="w-full mb-4" />
               <div className="grid grid-cols-2 gap-x-8">
                 <div className="space-y-4">
                   <p className="font-semibold border-b border-white pb-2">

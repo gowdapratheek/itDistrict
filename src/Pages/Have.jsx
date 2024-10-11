@@ -30,7 +30,6 @@ const Have = () => {
   return (
     <div className="flex flex-col items-center mx-auto w-[90vw] p-4 bg-[#d9d9d9] my-4">
       <div className="w-full h-full bg-white shadow-lg border p-4 lg:flex lg:flex-row lg:items-center lg:justify-between">
-        {/* Grid section for icons */}
         <div className="grid grid-cols-2 gap-4 lg:gap-6 lg:w-1/2">
           <div
             onClick={() => setSelected("dollar")}

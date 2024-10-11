@@ -1,17 +1,16 @@
-import test from "../assets/testimonails-img.png";
+import logo from "../assets/it-logo.png";
 
 export default function AboutUs() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#aee1ff] to-[#FCFCFC] flex items-center justify-center p-8">
       <div className="max-w-[80vw] lg:max-w-[60vw] w-full">
-        {/* Keep the heading position the same */}
         <h1 className="text-6xl md:text-7xl font-bold text-white m-0 p-0 -ml-10">
           Who are we
         </h1>
         <div className="bg-gradient-to-r from-[#00BCFF] to-[#007FFF] rounded-md p-4 shadow-[0px_0px_60px_grey]">
           <div className="mx-auto mb-6 sm:mb-8 flex justify-center">
             <img
-              src={test}
+              src={logo}
               alt="Testimonial Image"
               className="w-full h-auto object-cover max-w-[300px] md:max-w-[400px] lg:max-w-[500px] mx-auto rounded-lg"
             />

@@ -36,10 +36,9 @@ const Testimonials = () => {
   return (
     <div className="max-w-7xl mx-auto p-8 lg:p-16">
       <div className="bg-white shadow-[0px_0px_30px_grey] p-6 lg:p-12 flex flex-col lg:flex-row items-center text-center lg:text-left relative my-8 ">
-        {/* Image (responsive scaling for large screens) */}
         <div className="hidden md:block relative w-full md:w-1/3 mb-8 lg:mb-0">
           <img
-            src={test} // replace with the actual image path
+            src={test} 
             alt="Testimonial Image"
             className="w-full h-auto object-cover lg:max-w-[400px] lg:max-h-[400px] mx-auto"
           />

@@ -1,10 +1,10 @@
-import Have from "./components/Have.jsx";
+import Have from "./Pages/Have.jsx";
 import Header from "./components/Header.jsx";
-import Home from "./components/Home.jsx";
-import WhyChooseUs from "./components/WhyChooseUs.jsx";
-import Services from "./components/Services.jsx";
-import Testimonials from "./components/Testimonials.jsx";
-import AboutUs from "./components/AboutUs.jsx";
+import Home from "./Pages/Home.jsx";
+import WhyChooseUs from "./Pages/WhyChooseUs.jsx";
+import Services from "./Pages/Services.jsx";
+import Testimonials from "./Pages/Testimonials.jsx";
+import AboutUs from "./Pages/AboutUs.jsx";
 import Footer from "./components/Footer.jsx";
 function App() {
   return (

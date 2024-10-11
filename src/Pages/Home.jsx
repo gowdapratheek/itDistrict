@@ -1,16 +1,16 @@
-import { Button } from "./ui/button";
+import { Button } from "../components/ui/button";
 
 function Home() {
   return (
     <>
       <div className="relative h-[85vh] w-full  bg-[url('./assets/landing-page.jpg')] bg-cover bg-no-repeat bg-center">
-        <div className="absolute inset-0 z-0"></div>
+        <div className="absolute inset-0 z-0 bg-black opacity-45"></div>
 
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-white px-4 text-center">
-          <h1 className="text-[2rem] lg:text-[3rem]">
+        <div className="relative z-10 flex flex-col justify-center items-center h-full  px-4 text-center ">
+          <h1 className="text-[2rem] lg:text-[3rem] font-bold text-[#007FFF]">
             Professional IT Services
           </h1>
-          <p className="text-justify lg:w-[50%] w-full lg:text-base text-sm">
+          <p className="text-center lg:w-[50%] w-full lg:text-base text-sm text-white">
             dui turpis dui. maximus sapien viverra Nunc Vestibulum elit. vitae
             eget fringilla commodo consectetur libero, Ut elit. sollicitudin.
             eget ultrices Quisqu ac non sollicitudin. Nam gravida sodales. porta

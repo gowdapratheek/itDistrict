@@ -39,7 +39,7 @@ function Header() {
       <div className="bg-[#f1f1f1] w-full h-16 flex items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <a href="/" className="cursor-pointer">
-          <img src={logo} alt="IT Company Logo" className="h-8" />
+          <img src={logo} alt="IT Company Logo" className="h-16" />
         </a>
 
         {/* Hamburger Menu for Mobile */}

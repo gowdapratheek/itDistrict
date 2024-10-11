@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Heart, Smile, Cpu, Wrench } from "lucide-react"; // Icons from Lucide
+import { Heart, Smile, Cpu, Wrench } from "lucide-react";
 
 const WhyChooseUs = () => {
-  const [selected, setSelected] = useState("care"); // Default to 'care' on large screens
+  const [selected, setSelected] = useState("care");
 
   const content = {
     care: {
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
       color: "bg-gray-200 text-black",
       hoverColor:
-        "hover:bg-gradient-to-r hover:from-[#00BCFF] hover:to-[#007FFF] hover:text-white", // Hover effect for Dependable
+        "hover:bg-gradient-to-r hover:from-[#00BCFF] hover:to-[#007FFF] hover:text-white",
       icon: <Smile className="w-16 h-16" />,
     },
     passion: {
@@ -50,8 +50,8 @@ const WhyChooseUs = () => {
         <h2 className="text-3xl font-bold">Why Choose Us?</h2>
         <p className="text-gray-500 mt-4 max-w-xl mx-auto">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
-          since the 1500s.
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+          ever since the 1500s.
         </p>
       </div>
 
@@ -69,7 +69,6 @@ const WhyChooseUs = () => {
             {content[key].icon}
             <h3 className="text-lg font-bold mt-4">{content[key].title}</h3>
 
-            {/* Always show description on hover on larger screens */}
             <p
               className={`text-center mt-2 text-sm transition-all  ${
                 selected === key ? "block" : "hidden lg:block group-hover:block"

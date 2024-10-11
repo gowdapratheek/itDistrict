@@ -69,7 +69,7 @@ const ITServicesGrid = () => {
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3  gap-8 px-4 md:px-12">
         {services.map((service, index) => {
-          const Icon = service.icon; // Icon as a component
+          const Icon = service.icon; 
 
           return (
             <div
@@ -92,7 +92,7 @@ const ITServicesGrid = () => {
                 Learn more &gt;
               </a>
 
-              {/* Desktop: Show "Learn more" on hover */}
+              {/* Desktop "Learn more" on hover */}
               {hoveredService === index && (
                 <a
                   href={service.link}
