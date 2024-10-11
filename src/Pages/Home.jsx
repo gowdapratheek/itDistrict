@@ -7,7 +7,7 @@ function Home() {
         <div className="absolute inset-0 z-0 bg-black opacity-45"></div>
 
         <div className="relative z-10 flex flex-col justify-center items-center h-full  px-4 text-center ">
-          <h1 className="text-[2rem] lg:text-[3rem] font-bold text-[#007FFF]">
+          <h1 className="text-[2rem] lg:text-[3rem] font-bold text-[#00BCFF]">
             Professional IT Services
           </h1>
           <p className="text-center lg:w-[50%] w-full lg:text-base text-sm text-white">

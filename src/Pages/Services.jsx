@@ -74,7 +74,7 @@ const ITServicesGrid = () => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-6 rounded-lg shadow-md cursor-pointer transition-all duration-300 relative"
+              className="flex flex-col items-center justify-center p-6 lg:p-10 text-center rounded-lg shadow-md cursor-pointer transition-all duration-300 relative"
               onMouseEnter={() => setHoveredService(index)}
               onMouseLeave={() => setHoveredService(null)}
             >
@@ -82,12 +82,12 @@ const ITServicesGrid = () => {
               <Icon size={50} />
 
               {/* Service Title */}
-              <h3 className="mt-4 text-lg font-semibold">{service.title}</h3>
+              <h3 className="mt-4 text-xl font-bold">{service.title}</h3>
 
               {/* Mobile: Always show "Learn more" */}
               <a
                 href={service.link}
-                className="mt-2 text-sm font-medium text-[#ffc700] md:hidden"
+                className="mt-2 text-md text-yellow-400 md:hidden font-bold"
               >
                 Learn more &gt;
               </a>
