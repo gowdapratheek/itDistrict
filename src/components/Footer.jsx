@@ -29,21 +29,11 @@ export default function Footer() {
                 <li className="cursor-pointer hover:underline ">
                   Testimonials
                 </li>
-                <li className="cursor-pointer hover:underline ">
-                  FAQ
-                </li>
-                <li className="cursor-pointer hover:underline  ">
-                  Events
-                </li>
-                <li className="cursor-pointer hover:underline  ">
-                  Careers
-                </li>
-                <li className="cursor-pointer hover:underline  ">
-                  Blog
-                </li>
-                <li className="cursor-pointer hover:underline ">
-                  Contact us
-                </li>
+                <li className="cursor-pointer hover:underline ">FAQ</li>
+                <li className="cursor-pointer hover:underline  ">Events</li>
+                <li className="cursor-pointer hover:underline  ">Careers</li>
+                <li className="cursor-pointer hover:underline  ">Blog</li>
+                <li className="cursor-pointer hover:underline ">Contact us</li>
                 <li className="cursor-pointer hover:underline  ">
                   Get A Quote
                 </li>
@@ -54,30 +44,20 @@ export default function Footer() {
               <h3 className="font-bold mb-3">LOCATIONS</h3>
               <hr className="w-full md:w-[10vw] mb-4" />
               <ul className="space-y-2">
-                <li className="cursor-pointer hover:underline ">
-                  Beaumont
-                </li>
-                <li className="cursor-pointer hover:underline ">
-                  Calgary
-                </li>
+                <li className="cursor-pointer hover:underline ">Beaumont</li>
+                <li className="cursor-pointer hover:underline ">Calgary</li>
                 <li className="cursor-pointer hover:underline ">
                   Fort Saskatchewan
                 </li>
-                <li className="cursor-pointer hover:underline ">
-                  Leduc
-                </li>
-                <li className="cursor-pointer hover:underline ">
-                  Red Deer
-                </li>
+                <li className="cursor-pointer hover:underline ">Leduc</li>
+                <li className="cursor-pointer hover:underline ">Red Deer</li>
                 <li className="cursor-pointer hover:underline ">
                   Sherwood Park
                 </li>
                 <li className="cursor-pointer hover:underline ">
                   Spruce Grove
                 </li>
-                <li className="cursor-pointer hover:underline ">
-                  St. Albert
-                </li>
+                <li className="cursor-pointer hover:underline ">St. Albert</li>
               </ul>
             </div>
 
