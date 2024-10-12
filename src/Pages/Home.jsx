@@ -1,4 +1,9 @@
 import { Button } from "../components/ui/button";
+import AboutUs from "./AboutUs";
+import Have from "./Have";
+import Testimonials from "./Testimonials";
+import WhyChooseUs from "./WhyChooseUs";
+import Services from "./Services";
 
 function Home() {
   return (
@@ -33,6 +38,13 @@ function Home() {
             </Button>
           </div>
         </div>
+      </div>
+        <div className="flex flex-col justify-between">
+      <Have />
+      <WhyChooseUs />
+      <Services />
+      <Testimonials />
+      <AboutUs />
       </div>
     </>
   );

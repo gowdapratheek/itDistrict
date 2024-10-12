@@ -1,5 +1,11 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/it-logo.png";
-
+ const scrollToTop = () => {
+   window.scrollTo({
+     top: 50, // Scroll to the top of the page
+     behavior: "smooth", // Enable smooth scrolling
+   });
+ };
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#D9D9D9] to-[#FFFFFF] py-12 px-6 md:px-10">
@@ -16,9 +22,13 @@ export default function Footer() {
               <p>Address line2</p>
               <p>Canada</p>
             </div>
-            <button className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]">
+            <Link
+              to="/form"
+              onClick={scrollToTop}
+              className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
+            >
               Request a service
-            </button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 text-black w-full md:w-auto md:space-y-0 gap-8">
@@ -87,6 +97,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* <a href="gowdapratheek"><img className="h-6 w-12 absolute right-5 -mb-56 z-20" src="../src\assets\p-sig.png" /></a> */}
     </footer>
   );
 }
