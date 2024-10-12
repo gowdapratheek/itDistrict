@@ -166,7 +166,7 @@ const ITServicesGrid = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white py-10 min-h-screen">
+    <div id="services" className="bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white py-10 min-h-screen">
       <h2 className="text-2xl font-bold text-center mb-8">
         IT Services & Solutions We Offer to Edmonton Businesses
       </h2>

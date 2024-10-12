@@ -2,7 +2,7 @@ import logo from "../assets/it-logo.png";
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#aee1ff] to-[#FCFCFC] flex items-center justify-center p-8">
+    <div id="about" className="min-h-screen bg-gradient-to-b from-[#aee1ff] to-[#FCFCFC] flex items-center justify-center p-8">
       <div className="max-w-[80vw] lg:max-w-[60vw] w-full">
         <h1 className="text-6xl md:text-7xl font-bold text-white m-0 p-0 -ml-10">
           Who are we

@@ -5,6 +5,17 @@ function openNav() {
   const nav = document.getElementById("nav");
   nav.classList.toggle("hidden");
 }
+//To consider the header height for link
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    window.scrollTo({
+      top: target.offsetTop - 80, // Offset for the fixed header
+      behavior: "smooth",
+    });
+  });
+});
 
 function Header() {
   return (
@@ -58,12 +69,12 @@ function Header() {
         <nav className="hidden md:flex items-center space-x-8">
           <ul className="flex space-x-8 text-lg font-semibold text-[#00BCFF]">
             <li>
-              <a href="/about" className="hover:text-[#007FFF]">
+              <a href="#about" className="hover:text-[#007FFF]">
                 About Us
               </a>
             </li>
             <li>
-              <a href="/services" className="hover:text-[#007FFF]">
+              <a href="#services" className="hover:text-[#007FFF]">
                 Services
               </a>
             </li>
