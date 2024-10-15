@@ -22,6 +22,9 @@ const services = [
         <Server size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Managed IT Services</h3>
         <p className="text-white mt-4">Details about Managed IT Services...</p>
+        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+          Request a service
+        </button>
       </div>
     ),
   },
@@ -36,8 +39,18 @@ const services = [
           Managed Cybersecurity Services
         </h3>
         <p className="text-white mt-4">
-          Details about Cybersecurity Services...
+          Cyber-attacks is an intentional effort to steal, expose, alter,
+          disable or destroy anything that is vital to an organization and they
+          continue to grow. Our Cybersecurity solution can safeguard your
+          organization from cyber-attacks, Our Cybersecurity services offer a
+          comprehensive protection against a wide range of cyber threats that
+          can disrupt operations and compromise data. The IT District will
+          Empower your business with our expert Cybersecurity solutions to
+          shield your data and network.
         </p>
+        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+          Request a service
+        </button>
       </div>
     ),
   },
@@ -50,8 +63,16 @@ const services = [
         <Briefcase size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Professional Services</h3>
         <p className="text-white mt-4">
-          Details about Professional Services...
+          We are a team of highly skilled professionals dedicated in providing
+          innovative and reliable technology solutions to businesses of all
+          sizes. With years of experience in the industry, we have developed a
+          deep understanding of the unique challenges faced by our clients and
+          are committed in delivering customized solutions tailored to their
+          specific needs.
         </p>
+        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+          Request a service
+        </button>
       </div>
     ),
   },
@@ -64,6 +85,9 @@ const services = [
         <Folder size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">IT Field Support</h3>
         <p className="text-white mt-4">Details about IT Field Support...</p>
+        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+          Request a service
+        </button>
       </div>
     ),
   },
@@ -78,6 +102,9 @@ const services = [
         <p className="text-white mt-4">
           Details about Co-Managed IT Services...
         </p>
+        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+          Request a service
+        </button>
       </div>
     ),
   },
@@ -112,6 +139,9 @@ const services = [
         <Monitor size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Deskside/End-User Support</h3>
         <p className="text-white mt-4">Details about Deskside Support...</p>
+        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+          Request a service
+        </button>
       </div>
     ),
   },
@@ -124,6 +154,9 @@ const services = [
         <Database size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Data Center Support</h3>
         <p className="text-white mt-4">Details about Data Center Support...</p>
+        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+          Request a service
+        </button>
       </div>
     ),
   },
@@ -136,6 +169,9 @@ const services = [
         <Code size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Web Development</h3>
         <p className="text-white mt-4">Details about Web Development...</p>
+        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+          Request a service
+        </button>
       </div>
     ),
   },

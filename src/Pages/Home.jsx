@@ -16,11 +16,12 @@ function Home() {
             Professional IT Services
           </h1>
           <p className="text-center lg:w-[50%] w-full lg:text-base text-sm text-white">
-            dui turpis dui. maximus sapien viverra Nunc Vestibulum elit. vitae
-            eget fringilla commodo consectetur libero, Ut elit. sollicitudin.
-            eget ultrices Quisqu ac non sollicitudin. Nam gravida sodales. porta
-            felis, ex. at nisl. elit. libero, at lacus, ex. diam Ut placerat.
-            vitae consectetur ex elit amet, facilisis non.
+            We empower your business with expert Managed IT Services, The IT
+            District offers top-tier Managed IT Services and IT Support,
+            delivered by skilled, certified technicians utilizing cutting-edge
+            technologies and proven processes. We guarantee 24x7 uptime or
+            servers, network devices, infrastructure, and business applications,
+            ensuring seamless service.
           </p>
 
           <div className="flex lg:w-1/3 w-full justify-around mt-4">
@@ -39,12 +40,12 @@ function Home() {
           </div>
         </div>
       </div>
-        <div className="flex flex-col justify-between">
-      <Have />
-      <WhyChooseUs />
-      <Services />
-      <Testimonials />
-      <AboutUs />
+      <div className="flex flex-col justify-between">
+        <Have />
+        <WhyChooseUs />
+        <Services />
+        <Testimonials />
+        <AboutUs />
       </div>
     </>
   );

@@ -94,12 +94,12 @@ function Header() {
               </a>
             </li>
           </ul>
-          <Button
+          {/* <Button
             href="/login"
             className="bg-gradient-to-r from-[#00BCFF] to-[#007FFF] bg-[length:200%_100%] transition-all duration-500 ease-in-out text-white px-4 py-2 rounded-md hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
           >
             Client Login
-          </Button>
+          </Button> */}
         </nav>
       </div>
 

@@ -48,10 +48,17 @@ const WhyChooseUs = () => {
       {/* Heading Section */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">Why Choose Us?</h2>
-        <p className="text-gray-500 mt-4 max-w-xl mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-          ever since the 1500s.
+        <p className="text-gray-500 mt-4 max-w-3xl mx-auto">
+          We are a team of highly skilled professionals dedicated to providing
+          innovative and reliable technology solutions to businesses of all
+          sizes. With years of experience in the industry, we have developed a
+          deep understanding of the unique challenges faced by our clients and
+          are committed to delivering customized solutions tailored to their
+          specific needs.
+        </p>
+        <p className="text-gray-500 mt-4 max-w-3xl mx-auto">
+          Our clients are one of the major energy and utilities companies in
+          western Canada, Major hotels and a chain of restaurants across Canada.
         </p>
       </div>
 
