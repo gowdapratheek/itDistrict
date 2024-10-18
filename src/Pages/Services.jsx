@@ -2,8 +2,9 @@ import { useState, useRef, useCallback } from "react";
 import {
   Server,
   Shield,
-  Briefcase,
+  Smartphone,
   Folder,
+  Tv,
   Network,
   Cloud,
   Monitor,
@@ -21,7 +22,12 @@ const services = [
       <div className="text-left flex flex-col items-center space-y-5">
         <Server size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Managed IT Services</h3>
-        <p className="text-white mt-4">Details about Managed IT Services...</p>
+        <ul className="text-white list-disc pl-5">
+          <li>System Installation and Configuration</li>
+          <li>Backup and Storage</li>
+          <li>Office Moves or New Office Setup</li>
+          <li>Network Configuration and Wi-Fi Configuration.</li>
+        </ul>
         <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
           Request a service
         </button>
@@ -38,16 +44,13 @@ const services = [
         <h3 className="text-yellow-400 text-xl">
           Managed Cybersecurity Services
         </h3>
-        <p className="text-white mt-4">
-          Cyber-attacks is an intentional effort to steal, expose, alter,
-          disable or destroy anything that is vital to an organization and they
-          continue to grow. Our Cybersecurity solution can safeguard your
-          organization from cyber-attacks, Our Cybersecurity services offer a
-          comprehensive protection against a wide range of cyber threats that
-          can disrupt operations and compromise data. The IT District will
-          Empower your business with our expert Cybersecurity solutions to
-          shield your data and network.
-        </p>
+        <ul className="text-white list-disc pl-5">
+          <li>Intentional efforts to steal, expose, alter, disable, or destroy assets crucial to an organization.</li>
+          <li>Cyber-attacks continue to increase in frequency and sophistication.</li>
+          <li>Protects against cyber-attacks that could disrupt operations or compromise data.</li>
+          <li>The IT District offers expert Cybersecurity solutions.</li>
+          <li>These solutions shield data and networks, empowering organizations to operate securely.</li>
+        </ul>
         <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
           Request a service
         </button>
@@ -55,21 +58,19 @@ const services = [
     ),
   },
   {
-    icon: Briefcase,
-    title: "Professional Services",
+    icon: Smartphone,
+    title: "App Development",
     link: "#professional",
     details: (
       <div className="text-left flex flex-col items-center space-y-5">
-        <Briefcase size={100} className="mb-4" />
-        <h3 className="text-yellow-400 text-xl">Professional Services</h3>
-        <p className="text-white mt-4">
-          We are a team of highly skilled professionals dedicated in providing
-          innovative and reliable technology solutions to businesses of all
-          sizes. With years of experience in the industry, we have developed a
-          deep understanding of the unique challenges faced by our clients and
-          are committed in delivering customized solutions tailored to their
-          specific needs.
-        </p>
+        <Smartphone size={100} className="mb-4" />
+        <h3 className="text-yellow-400 text-xl">App Development</h3>
+        <ul className="text-white list-disc pl-5">
+          <li>Offer services to develop apps for multiple platforms like iOS, Android, or cross-platform frameworks such as React Native and Flutter.</li>
+          <li>Focus on delivering a seamless and intuitive user experience (UX) and user interface (UI) that enhances customer satisfaction.</li>
+          <li>Offer ongoing app maintenance, updates, bug fixes, and technical support post-launch to ensure smooth operations.</li>
+          <li>Offer tailor-made apps to meet the specific needs of different businesses, industries, and user requirements.</li>
+        </ul>
         <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
           Request a service
         </button>
@@ -77,14 +78,19 @@ const services = [
     ),
   },
   {
-    icon: Folder,
-    title: "IT Field Support",
+    icon: Tv,
+    title: "Digital Marketing",
     link: "#it-support",
     details: (
       <div className="text-left flex flex-col items-center space-y-5">
-        <Folder size={100} className="mb-4" />
+        <Tv size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">IT Field Support</h3>
-        <p className="text-white mt-4">Details about IT Field Support...</p>
+        <ul className="text-white list-disc pl-5">
+          <li>Offer services to develop apps for multiple platforms like iOS, Android, or cross-platform frameworks such as React Native and Flutter.</li>
+          <li>Focus on delivering a seamless and intuitive user experience (UX) and user interface (UI) that enhances customer satisfaction.</li>
+          <li>Offer ongoing app maintenance, updates, bug fixes, and technical support post-launch to ensure smooth operations.</li>
+          <li>Offer tailor-made apps to meet the specific needs of different businesses, industries, and user requirements.</li>
+        </ul>
         <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
           Request a service
         </button>
