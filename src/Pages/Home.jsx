@@ -1,4 +1,3 @@
-import { Button } from "../components/ui/button";
 import AboutUs from "./AboutUs";
 import Have from "./Have";
 import Testimonials from "./Testimonials";
@@ -25,18 +24,18 @@ function Home() {
           </p>
 
           <div className="flex lg:w-1/3 w-full justify-around mt-4">
-            <Button
-              href=""
-              className="cursor-pointer border border-[#00BCFF] w-[45%] text-sm lg:text-base py-2 bg-gradient-to-r from-[#00BCFF] to-[#007FFF] rounded-md text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 "
+            <a
+              href="#services"
+              className="cursor-pointer border border-[#00BCFF] w-[45%] text-sm lg:text-base py-2 bg-gradient-to-r from-[#00BCFF] to-[#007FFF] rounded-md text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 text-white"
             >
               IT ASSESSMENT
-            </Button>
-            <Button
-              href=""
-              className="cursor-pointer w-[45%] text-sm lg:text-base py-2 hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] border border-[#00BCFF] bg-transparent  hover:text-white rounded-md text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300"
+            </a>
+            <a
+              href="tel:+1(587) 956-7985"
+              className="cursor-pointer w-[45%] text-sm lg:text-base py-2 hover:bg-gradient-to-r from-[#00BCFF] to-[#007FFF] border border-[#00BCFF] bg-transparent  hover:text-white rounded-md text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 text-white"
             >
               Call Now
-            </Button>
+            </a>
           </div>
         </div>
       </div>

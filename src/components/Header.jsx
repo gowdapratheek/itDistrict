@@ -24,33 +24,33 @@ function Header() {
       <div className="bg-[#dcdcdc] w-full">
         <ul className="flex items-center text-[0.7rem] justify-between p-2 md:justify-end space-x-4 lg:space-x-8">
           <li>
-            <a href="/assessment" className="hover:underline">
+            <a href="#services" className="hover:underline">
               IT Assessment
             </a>
           </li>
           <li>
-            <a href="/support" className="hover:underline">
+            <a href="/form" className="hover:underline">
               Support
             </a>
           </li>
           <li>
-            <a href="tel:+1123567899" className="hover:underline">
-              +1(123)-567-899
+            <a href="tel:+1(587) 956-7985" className="hover:underline">
+              +1(587) 956-7985
             </a>
           </li>
           <li>
-            <a href="mailto:info@example.com" className="hover:underline">
-              info@example.com
+            <a href="mailto:support@itdistrict.com" className="hover:underline">
+              support@itdistrict.com
             </a>
           </li>
         </ul>
       </div>
 
       {/* Main Header */}
-      <div className="bg-[#f1f1f1] w-full h-16 flex items-center justify-between px-4 lg:px-8">
+      <div className="bg-[#f1f1f1] w-full h-20 flex items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <a href="/" className="cursor-pointer">
-          <img src={logo} alt="IT Company Logo" className="h-16" />
+          <img src={logo} alt="IT Company Logo" className="h-20" />
         </a>
 
         {/* Hamburger Menu for Mobile */}
@@ -69,6 +69,11 @@ function Header() {
         <nav className="hidden md:flex items-center space-x-8">
           <ul className="flex space-x-8 text-lg font-semibold text-[#00BCFF]">
             <li>
+              <a href="/" className="hover:text-[#007FFF]">
+                Home
+              </a>
+            </li>
+            <li>
               <a href="#about" className="hover:text-[#007FFF]">
                 About Us
               </a>
@@ -78,18 +83,14 @@ function Header() {
                 Services
               </a>
             </li>
+
             <li>
-              <a href="/industries" className="hover:text-[#007FFF]">
-                Industries
-              </a>
-            </li>
-            <li>
-              <a href="/locations" className="hover:text-[#007FFF]">
+              <a href="#footer" className="hover:text-[#007FFF]">
                 Areas We Serve
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-[#007FFF]">
+              <a href="/form" className="hover:text-[#007FFF]">
                 Contact Us
               </a>
             </li>
@@ -109,6 +110,11 @@ function Header() {
         className="bg-gray-100 absolute  right-0 w-3/5 md:w-2/5 font-semibold h-screen flex-col space-y-6 text-lg text-[#00BCFF] pl-6 pt-6 hidden lg:hidden text-center"
       >
         <ul className="space-y-6">
+          <li>
+            <a href="/" className="hover:text-[#007FFF]">
+              Home
+            </a>
+          </li>
           <li>
             <a href="/about" className="">
               About Us
@@ -135,7 +141,7 @@ function Header() {
           </li>
           <hr className="w-[90%] m-0 p-0" />
           <li>
-            <a href="/contact" className="">
+            <a href="/form" className="">
               Contact Us
             </a>
           </li>

@@ -8,22 +8,22 @@ const Have = () => {
     dollar: {
       title: "HAVE YOU EVER SAID",
       heading: "I need to save money",
-      text: "Sit nec facilisis non, leo. Ex amet, eget ac gravida sit elit. Convallis. Ex. Placerat Nullam Praesent lobortis, eget Donec quam vel porta enim, ex viverra vitae porta gravida lacus, nec scelerisque faucibus dui. Ultrices orci venenatis elit vitae in hendrerit leo, vitae varius dui Quisque viverra Sed Sed tincidunt sed viverra ex maximus tincidunt dui. Est. Est, id dui.",
+      text: "Our IT Professional services are much pocket friendly, and we can customize are services as per the demand.",
     },
     calendar: {
       title: "HAVE YOU EVER SAID",
       heading: "I need to save time",
-      text: "Sit nec facilisis non, leo. Ex amet, eget ac gravida sit elit. Convallis. Ex. Placerat Nullam Praesent lobortis, eget Donec quam vel porta enim. Ex viverra vitae porta gravida lacus, nec scelerisque faucibus dui. Ultrices orci venenatis elit vitae in hendrerit leo, vitae varius dui Quisque viverra Sed Sed tincidunt sed viverra ex maximus tincidunt dui, est, est, id dui.",
+      text: "Our professionals are smart enough to understand your business objective and can provide solutions within faster timelines that will save not only time but also cost. ",
     },
     monitor: {
       title: "HAVE YOU EVER SAID",
       heading: "I need Simplicity",
-      text: "Sit nec facilisis non, leo. Ex amet, eget ac gravida sit elit. Convallis. Ex. Placerat Nullam Praesent lobortis, eget Donec quam vel porta enim, ex viverra vitae porta gravida lacus, nec scelerisque faucibus dui. Ultrices orci venenatis elit vitae in hendrerit leo. Vitae varius dui Quisque viverra Sed Sed tincidunt sed viverra ex maximus tincidunt dui, est. Est, id dui.",
+      text: "Our process and approach towards a problem will be simplified by using cutting-edge tools and processes which can reduce the complexity and yield good results.",
     },
     thumbsUp: {
       title: "HAVE YOU EVER SAID",
       heading: "I need reliable service",
-      text: "Sit nec facilisis non, leo. Ex amet, eget ac gravida sit elit. Convallis. Ex, Placerat Nullam Praesent lobortis, eget Donec quam vel porta enim. Ex viverra vitae porta gravida lacus, nec scelerisque faucibus dui. Ultrices orci venenatis elit vitae in hendrerit leo, vitae varius dui Quisque viverra Sed Sed tincidunt sed viverra ex maximus tincidunt dui, est, est, id dui.",
+      text: "In our 20 years of experience in the IT Industry, we have been more trusted and reliable vendors and partners to our customers in their every step of their IT goals. ",
     },
   };
 

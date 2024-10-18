@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
     care: {
       title: "WE CARE",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "We care for our customer’s business as we do ours, hence our attitude towards providing every solution has been validated and implemented with care and perfection.",
       color: "bg-gray-200 text-black",
       hoverColor:
         "hover:bg-gradient-to-r hover:from-[#00BCFF] hover:to-[#007FFF] hover:text-white",
@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
     dependable: {
       title: "DEPENDABLE",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "we pride ourselves on our technical expertise hence our ability to respond and provide services that can be trusted at any given time. ",
       color: "bg-gray-200 text-black",
       hoverColor:
         "hover:bg-gradient-to-r hover:from-[#00BCFF] hover:to-[#007FFF] hover:text-white",
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
     passion: {
       title: "PASSION",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "Our passion to learn cutting-edge technologies and willingness to provide best support/solutions for our problems. ",
       color: "bg-gray-200 text-black",
       hoverColor:
         "hover:bg-gradient-to-r hover:from-[#00BCFF] hover:to-[#007FFF] hover:text-white", // Hover effect for Passion
@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
     service: {
       title: "SERVICE",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "The IT District offers top-tier Managed IT Services and IT Support, delivered by skilled, certified technicians utilizing cutting-edge technologies and proven processes.",
       color: "bg-gray-200 text-black",
       hoverColor:
         "hover:bg-gradient-to-r hover:from-[#00BCFF] hover:to-[#007FFF] hover:text-white", // Hover effect for Service

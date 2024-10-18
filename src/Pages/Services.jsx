@@ -3,7 +3,6 @@ import {
   Server,
   Shield,
   Smartphone,
-  Folder,
   Tv,
   Network,
   Cloud,
@@ -28,9 +27,12 @@ const services = [
           <li>Office Moves or New Office Setup</li>
           <li>Network Configuration and Wi-Fi Configuration.</li>
         </ul>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -45,15 +47,29 @@ const services = [
           Managed Cybersecurity Services
         </h3>
         <ul className="text-white list-disc pl-5">
-          <li>Intentional efforts to steal, expose, alter, disable, or destroy assets crucial to an organization.</li>
-          <li>Cyber-attacks continue to increase in frequency and sophistication.</li>
-          <li>Protects against cyber-attacks that could disrupt operations or compromise data.</li>
+          <li>
+            Intentional efforts to steal, expose, alter, disable, or destroy
+            assets crucial to an organization.
+          </li>
+          <li>
+            Cyber-attacks continue to increase in frequency and sophistication.
+          </li>
+          <li>
+            Protects against cyber-attacks that could disrupt operations or
+            compromise data.
+          </li>
           <li>The IT District offers expert Cybersecurity solutions.</li>
-          <li>These solutions shield data and networks, empowering organizations to operate securely.</li>
+          <li>
+            These solutions shield data and networks, empowering organizations
+            to operate securely.
+          </li>
         </ul>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -66,14 +82,30 @@ const services = [
         <Smartphone size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">App Development</h3>
         <ul className="text-white list-disc pl-5">
-          <li>Offer services to develop apps for multiple platforms like iOS, Android, or cross-platform frameworks such as React Native and Flutter.</li>
-          <li>Focus on delivering a seamless and intuitive user experience (UX) and user interface (UI) that enhances customer satisfaction.</li>
-          <li>Offer ongoing app maintenance, updates, bug fixes, and technical support post-launch to ensure smooth operations.</li>
-          <li>Offer tailor-made apps to meet the specific needs of different businesses, industries, and user requirements.</li>
+          <li>
+            Offer services to develop apps for multiple platforms like iOS,
+            Android, or cross-platform frameworks such as React Native and
+            Flutter.
+          </li>
+          <li>
+            Focus on delivering a seamless and intuitive user experience (UX)
+            and user interface (UI) that enhances customer satisfaction.
+          </li>
+          <li>
+            Offer ongoing app maintenance, updates, bug fixes, and technical
+            support post-launch to ensure smooth operations.
+          </li>
+          <li>
+            Offer tailor-made apps to meet the specific needs of different
+            businesses, industries, and user requirements.
+          </li>
         </ul>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -86,14 +118,30 @@ const services = [
         <Tv size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">IT Field Support</h3>
         <ul className="text-white list-disc pl-5">
-          <li>Offer services to develop apps for multiple platforms like iOS, Android, or cross-platform frameworks such as React Native and Flutter.</li>
-          <li>Focus on delivering a seamless and intuitive user experience (UX) and user interface (UI) that enhances customer satisfaction.</li>
-          <li>Offer ongoing app maintenance, updates, bug fixes, and technical support post-launch to ensure smooth operations.</li>
-          <li>Offer tailor-made apps to meet the specific needs of different businesses, industries, and user requirements.</li>
+          <li>
+            Offer services to develop apps for multiple platforms like iOS,
+            Android, or cross-platform frameworks such as React Native and
+            Flutter.
+          </li>
+          <li>
+            Focus on delivering a seamless and intuitive user experience (UX)
+            and user interface (UI) that enhances customer satisfaction.
+          </li>
+          <li>
+            Offer ongoing app maintenance, updates, bug fixes, and technical
+            support post-launch to ensure smooth operations.
+          </li>
+          <li>
+            Offer tailor-made apps to meet the specific needs of different
+            businesses, industries, and user requirements.
+          </li>
         </ul>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -108,9 +156,12 @@ const services = [
         <p className="text-white mt-4">
           Details about Co-Managed IT Services...
         </p>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -130,9 +181,12 @@ const services = [
           <li>AWS Consulting, Implementation & Support</li>
           <li>3rd Party Cloud Solutions</li>
         </ul>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -144,10 +198,20 @@ const services = [
       <div className="text-left flex flex-col items-center space-y-5">
         <Monitor size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Deskside/End-User Support</h3>
-        <p className="text-white mt-4">Details about Deskside Support...</p>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <ul className="text-white list-disc pl-5">
+          <li>IT Asset Move</li>
+          <li>IT Support and Maintenance</li>
+          <li>Network & Cabling</li>
+          <li>Printing & Imaging support</li>
+          <li>Service Desk</li>
+          <li>IT Hands & Feet support</li>
+        </ul>
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -159,10 +223,21 @@ const services = [
       <div className="text-left flex flex-col items-center space-y-5">
         <Database size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Data Center Support</h3>
-        <p className="text-white mt-4">Details about Data Center Support...</p>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <ul className="text-white list-disc pl-5">
+          <li>DC Migration</li>
+          <li>Remote install & Management</li>
+          <li>Server automation solutions</li>
+          <li>Patch Management</li>
+          <li>DC Design & Architecture</li>
+          <li>Disaster Recovery Solutions</li>
+          <li>Backup and Restore Solutions</li>
+        </ul>
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -174,10 +249,23 @@ const services = [
       <div className="text-left flex flex-col items-center space-y-5">
         <Code size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Web Development</h3>
-        <p className="text-white mt-4">Details about Web Development...</p>
-        <button className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded">
+        <ul className="text-white list-disc pl-5">
+          <li>MongoDB</li>
+          <li>Express.js</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>RESTful APIs</li>
+          <li>JWT Authentication</li>
+          <li>State Management (Context API)</li>
+          <li>Responsive Design (Tailwind CSS)</li>
+          <li>Version Control (Git, Hostinger)</li>
+        </ul>
+        <a
+          href="/form"
+          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        >
           Request a service
-        </button>
+        </a>
       </div>
     ),
   },
@@ -208,7 +296,10 @@ const ITServicesGrid = () => {
   };
 
   return (
-    <div id="services" className="bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white py-10 min-h-screen">
+    <div
+      id="services"
+      className="bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white py-10 min-h-screen"
+    >
       <h2 className="text-2xl font-bold text-center mb-8 p-4">
         IT Services & Solutions We Offer to Edmonton Businesses
       </h2>

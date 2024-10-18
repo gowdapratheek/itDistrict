@@ -8,7 +8,7 @@ import logo from "../assets/it-logo.png";
  };
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#D9D9D9] to-[#FFFFFF] py-12 px-6 md:px-10">
+    <footer id="footer" className="bg-gradient-to-b from-[#D9D9D9] to-[#FFFFFF] py-12 px-6 md:px-10">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-start space-y-10 md:space-y-0">
           <div className="flex flex-col md:w-[40vw] md:mr-4 md:items-start space-y-6">
@@ -54,20 +54,9 @@ export default function Footer() {
               <h3 className="font-bold mb-3">LOCATIONS</h3>
               <hr className="w-full md:w-[10vw] mb-4" />
               <ul className="space-y-2">
-                <li className="cursor-pointer hover:underline ">Beaumont</li>
-                <li className="cursor-pointer hover:underline ">Calgary</li>
-                <li className="cursor-pointer hover:underline ">
-                  Fort Saskatchewan
-                </li>
-                <li className="cursor-pointer hover:underline ">Leduc</li>
-                <li className="cursor-pointer hover:underline ">Red Deer</li>
-                <li className="cursor-pointer hover:underline ">
-                  Sherwood Park
-                </li>
-                <li className="cursor-pointer hover:underline ">
-                  Spruce Grove
-                </li>
-                <li className="cursor-pointer hover:underline ">St. Albert</li>
+                <li>Canada</li>
+                <li>USA</li>
+                
               </ul>
             </div>
 
