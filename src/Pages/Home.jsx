@@ -57,7 +57,7 @@ function Home() {
         <Have />
         <WhyChooseUs />
         <Services />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <AboutUs />
       </div>
     </>
