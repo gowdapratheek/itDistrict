@@ -12,6 +12,7 @@ import {
   Database,
   Code,
   X,
+  Clock,
 } from "lucide-react";
 
 const scrollToTop = () => {
@@ -32,7 +33,7 @@ const services = [
         <ul className="text-white list-disc pl-5">
           <li>System Installation and Configuration</li>
           <li>Backup and Storage</li>
-          <li>Office Moves or New Office Setup</li>
+          <li>Office Moves ,New Office Setup, and Hardware Lift and Shift Supports</li>
           <li>Network Configuration and Wi-Fi Configuration.</li>
         </ul>
         <Link
@@ -150,12 +151,12 @@ const services = [
     ),
   },
   {
-    icon: Network,
+    icon: Clock,
     title: "Time and Attendance System",
     link: "#co-managed",
     details: (
       <div className="text-left flex flex-col items-center space-y-5">
-        <Network size={100} className="mb-4" />
+        <Clock size={100} className="mb-4" />
         <h3 className="text-yellow-400 text-xl">Time and Attendance System</h3>
         <ul className="text-white list-disc pl-5">
           <li>
