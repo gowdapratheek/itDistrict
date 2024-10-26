@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { useState, useRef, useCallback } from "react";
 import {
   Server,
@@ -12,6 +14,12 @@ import {
   X,
 } from "lucide-react";
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 50, // Scroll to the top of the page
+    behavior: "smooth", // Enable smooth scrolling
+  });
+};
 const services = [
   {
     icon: Server,
@@ -27,12 +35,13 @@ const services = [
           <li>Office Moves ,New Office Setup, and Hardware Lift and Shift Supports</li>
           <li>Network Configuration and Wi-Fi Configuration.</li>
         </ul>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -46,30 +55,23 @@ const services = [
         <h3 className="text-yellow-400 text-xl">
           Managed Cybersecurity Services
         </h3>
-        <ul className="text-white list-disc pl-5">
-          <li>
-            Intentional efforts to steal, expose, alter, disable, or destroy
-            assets crucial to an organization.
-          </li>
-          <li>
-            Cyber-attacks continue to increase in frequency and sophistication.
-          </li>
-          <li>
-            Protects against cyber-attacks that could disrupt operations or
-            compromise data.
-          </li>
-          <li>The IT District offers expert Cybersecurity solutions.</li>
-          <li>
-            These solutions shield data and networks, empowering organizations
-            to operate securely.
-          </li>
-        </ul>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <p className="mx-[20%]">
+          Cyber-attacks is an intentional effort to steal, expose, alter,
+          disable or destroy anything that is vital to an organization and they
+          continue to grow. Our Cybersecurity solution can safeguard your
+          organization from cyber-attacks, Our Cybersecurity services offer a
+          comprehensive protection against a wide range of cyber threats that
+          can disrupt operations and compromise data. The IT District will
+          Empower your business with our expert Cybersecurity solutions to
+          shield your data and network
+        </p>
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -100,12 +102,13 @@ const services = [
             businesses, industries, and user requirements.
           </li>
         </ul>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -136,12 +139,13 @@ const services = [
             businesses, industries, and user requirements.
           </li>
         </ul>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -156,12 +160,13 @@ const services = [
         <p className="text-white mt-4">
           Details about Co-Managed IT Services...
         </p>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -181,12 +186,13 @@ const services = [
           <li>AWS Consulting, Implementation & Support</li>
           <li>3rd Party Cloud Solutions</li>
         </ul>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -206,12 +212,13 @@ const services = [
           <li>Service Desk</li>
           <li>IT Hands & Feet support</li>
         </ul>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -232,12 +239,13 @@ const services = [
           <li>Disaster Recovery Solutions</li>
           <li>Backup and Restore Solutions</li>
         </ul>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
@@ -260,12 +268,13 @@ const services = [
           <li>Responsive Design (Tailwind CSS)</li>
           <li>Version Control (Git, Hostinger)</li>
         </ul>
-        <a
-          href="/form"
-          className="mt-4 bg-yellow-400 text-black font-bold py-2 px-4 rounded"
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
         >
           Request a service
-        </a>
+        </Link>
       </div>
     ),
   },
