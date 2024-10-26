@@ -36,12 +36,13 @@ function Home() {
           }`}
         >
           <video
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain md:object-cover"
             src="/1.mp4"
             autoPlay
             muted
             onEnded={() => setVideoEnded(true)}
           />
+
         </div>
 
         {/* Carousel Images */}

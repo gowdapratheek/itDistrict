@@ -55,24 +55,16 @@ const services = [
         <h3 className="text-yellow-400 text-xl">
           Managed Cybersecurity Services
         </h3>
-        <ul className="text-white list-disc pl-5">
-          <li>
-            Intentional efforts to steal, expose, alter, disable, or destroy
-            assets crucial to an organization.
-          </li>
-          <li>
-            Cyber-attacks continue to increase in frequency and sophistication.
-          </li>
-          <li>
-            Protects against cyber-attacks that could disrupt operations or
-            compromise data.
-          </li>
-          <li>The IT District offers expert Cybersecurity solutions.</li>
-          <li>
-            These solutions shield data and networks, empowering organizations
-            to operate securely.
-          </li>
-        </ul>
+        <p className="mx-[20%]">
+          Cyber-attacks is an intentional effort to steal, expose, alter,
+          disable or destroy anything that is vital to an organization and they
+          continue to grow. Our Cybersecurity solution can safeguard your
+          organization from cyber-attacks, Our Cybersecurity services offer a
+          comprehensive protection against a wide range of cyber threats that
+          can disrupt operations and compromise data. The IT District will
+          Empower your business with our expert Cybersecurity solutions to
+          shield your data and network
+        </p>
         <Link
           to="/form"
           onClick={scrollToTop}
