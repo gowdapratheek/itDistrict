@@ -24,7 +24,7 @@ const services = [
         <ul className="text-white list-disc pl-5">
           <li>System Installation and Configuration</li>
           <li>Backup and Storage</li>
-          <li>Office Moves or New Office Setup</li>
+          <li>Office Moves ,New Office Setup, and Hardware Lift and Shift Supports</li>
           <li>Network Configuration and Wi-Fi Configuration.</li>
         </ul>
         <a
@@ -116,7 +116,7 @@ const services = [
     details: (
       <div className="text-left flex flex-col items-center space-y-5">
         <Tv size={100} className="mb-4" />
-        <h3 className="text-yellow-400 text-xl">IT Field Support</h3>
+        <h3 className="text-yellow-400 text-xl">Digital Marketing</h3>
         <ul className="text-white list-disc pl-5">
           <li>
             Offer services to develop apps for multiple platforms like iOS,
@@ -147,7 +147,7 @@ const services = [
   },
   {
     icon: Network,
-    title: "Co-Managed IT Services",
+    title: "IT Field Support",
     link: "#co-managed",
     details: (
       <div className="text-left flex flex-col items-center space-y-5">
