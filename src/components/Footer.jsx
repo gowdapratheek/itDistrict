@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import logo from "../assets/it-logo.png";
+import { Link } from "react-router-dom";
  const scrollToTop = () => {
    window.scrollTo({
      top: 50, // Scroll to the top of the page
@@ -8,7 +8,10 @@ import logo from "../assets/it-logo.png";
  };
 export default function Footer() {
   return (
-    <footer id="footer" className="bg-gradient-to-b from-[#D9D9D9] to-[#FFFFFF] py-12 px-6 md:px-10">
+    <footer
+      id="footer"
+      className="bg-gradient-to-b from-[#D9D9D9] to-[#FFFFFF] py-12 px-6 md:px-10"
+    >
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-start space-y-10 md:space-y-0">
           <div className="flex flex-col md:w-[40vw] md:mr-4 md:items-start space-y-6">
@@ -18,8 +21,8 @@ export default function Footer() {
               </a>
             </div>
             <div className="text-left space-y-1">
-              <p>Address line1</p>
-              <p>Address line2</p>
+              <p>9725 106 Street </p>
+              <p>Edmonton, Alberta, T5K 1B5</p>
               <p>Canada</p>
             </div>
             <Link
@@ -56,7 +59,6 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>Canada</li>
                 <li>USA</li>
-                
               </ul>
             </div>
 

@@ -67,30 +67,30 @@ function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <ul className="flex space-x-8 text-lg font-semibold text-[#00BCFF]">
+          <ul className="flex space-x-8 text-lg font-semibold text-black">
             <li>
-              <a href="/" className="hover:text-[#007FFF]">
+              <a href="/" className="hover:underline">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-[#007FFF]">
+              <a href="#about" className="hover:underline">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-[#007FFF]">
+              <a href="#services" className="hover:underline">
                 Services
               </a>
             </li>
 
             <li>
-              <a href="#footer" className="hover:text-[#007FFF]">
+              <a href="#footer" className="hover:underline">
                 Areas We Serve
               </a>
             </li>
             <li>
-              <a href="/form" className="hover:text-[#007FFF]">
+              <a href="/form" className="hover:underline">
                 Contact Us
               </a>
             </li>
@@ -111,7 +111,7 @@ function Header() {
       >
         <ul className="space-y-6">
           <li>
-            <a href="/" className="hover:text-[#007FFF]">
+            <a href="/" className="">
               Home
             </a>
           </li>
