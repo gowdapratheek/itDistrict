@@ -89,3 +89,12 @@
   width: 100%;
   height: 85vh;
 }
+
+.list-minus {
+  list-style-type: none;
+}
+
+.list-minus li::marker {
+  content: "- "; /* Unicode minus symbol */
+  font-weight: bold;
+}

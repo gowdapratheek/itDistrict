@@ -151,15 +151,52 @@ const services = [
   },
   {
     icon: Network,
-    title: "Co-Managed IT Services",
+    title: "Time and Attendance System",
     link: "#co-managed",
     details: (
       <div className="text-left flex flex-col items-center space-y-5">
         <Network size={100} className="mb-4" />
-        <h3 className="text-yellow-400 text-xl">Co-Managed IT Services</h3>
-        <p className="text-white mt-4">
-          Details about Co-Managed IT Services...
-        </p>
+        <h3 className="text-yellow-400 text-xl">Time and Attendance System</h3>
+        <ul className="text-white list-disc pl-5">
+          <li>
+            Time & Attendance
+            <ul className="list-minus pl-5">
+              <li>Time capture using clocks</li>
+              <li>
+                Exception&apos;s view for managers (Unscheduled absence etc.)
+              </li>
+            </ul>
+          </li>
+          <li>
+            Leave Management
+            <ul className="list-minus pl-5">
+              <li>Employees with to apply leave online using web browser</li>
+              <li>
+                Managers to View leave balances/Approve/Restrict leave based on
+                eligibility in web browser
+              </li>
+            </ul>
+          </li>
+          <li>
+            Schedule
+            <ul className="list-minus pl-5">
+              <li>
+                Pattern based scheduling for all employees can be maintained and
+                managed
+              </li>
+            </ul>
+          </li>
+          <li>
+            Integration
+            <ul className="list-minus pl-5">
+              <li>
+                Integrating the time and Attendance system to the Financial
+                Systems for payroll generation
+              </li>
+            </ul>
+          </li>
+        </ul>
+
         <Link
           to="/form"
           onClick={scrollToTop}
