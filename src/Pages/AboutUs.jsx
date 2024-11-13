@@ -51,20 +51,6 @@ export default function AboutUs() {
                 an increasingly digital world.
               </p>
             </section>
-            <section>
-              <h2 className="font-bold mb-2 text-lg md:text-xl underline text-center ">
-                OUR STRENGTH
-              </h2>
-              <p className="text-xs sm:text-sm md:text-base">
-                Our range of services includes IT consulting, software
-                development, cybersecurity, cloud solutions, and data analytics.
-                We specialize in delivering cutting-edge technology solutions.
-                IT Help Desk/Service Desk and process automation. Our technical
-                expertise and industry knowledge position us as a leader for any
-                organization seeking innovative IT solutions to help our clients
-                to achieve their business objectives.
-              </p>
-            </section>
           </div>
         </div>
       </div>
