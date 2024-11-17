@@ -39,15 +39,15 @@ export default function Footer() {
               <h3 className="font-bold mb-3">About us</h3>
               <hr className="w-full md:w-[10vw] mb-4" />
               <ul className="space-y-2">
-                <li className="cursor-pointer ">
+                <li className="cursor-pointer hover:underline ">
                   Testimonials
                 </li>
-                <li className="cursor-pointer">FAQ</li>
-                <li className="cursor-pointer ">Events</li>
-                <li className="cursor-pointer ">Careers</li>
-                <li className="cursor-pointer ">Blog</li>
-                <li className="cursor-pointer">Contact us</li>
-                <li className="cursor-pointer ">
+                <li className="cursor-pointer hover:underline ">FAQ</li>
+                <li className="cursor-pointer hover:underline  ">Events</li>
+                <li className="cursor-pointer hover:underline  ">Careers</li>
+                <li className="cursor-pointer hover:underline  ">Blog</li>
+                <li className="cursor-pointer hover:underline ">Contact us</li>
+                <li className="cursor-pointer hover:underline  ">
                   Get A Quote
                 </li>
               </ul>

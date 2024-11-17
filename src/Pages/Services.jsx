@@ -6,6 +6,7 @@ import {
   Shield,
   Smartphone,
   Tv,
+  Network,
   Cloud,
   Monitor,
   Database,

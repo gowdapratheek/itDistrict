@@ -1,4 +1,4 @@
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import logo from "../assets/it-logo.png";
 
 function openNav() {
@@ -24,7 +24,7 @@ function Header() {
       <div className="bg-[#dcdcdc] w-full">
         <ul className="flex items-center text-[0.7rem] justify-between p-2 md:justify-end space-x-4 lg:space-x-8">
           <li>
-            <a href="/services" className="hover:underline">
+            <a href="#services" className="hover:underline">
               IT Assessment
             </a>
           </li>
@@ -34,16 +34,13 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="tel:587 596 7985" className="hover:underline">
-              587 596 7985
+            <a href="tel:+1(587) 956-7985" className="hover:underline">
+              +1(587) 956-7985
             </a>
           </li>
           <li>
-            <a
-              href="mailto:support@theitdistrict.com"
-              className="hover:underline"
-            >
-              support@theitdistrict.com
+            <a href="mailto:support@itdistrict.com" className="hover:underline">
+              support@itdistrict.com
             </a>
           </li>
         </ul>
@@ -77,18 +74,18 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="/AboutUs" className="hover:underline">
+              <a href="#about" className="hover:underline">
                 About Us
               </a>
             </li>
             <li>
-              <a href="/services" className="hover:underline">
+              <a href="#services" className="hover:underline">
                 Services
               </a>
             </li>
 
             <li>
-              <a href="/Have" className="hover:underline">
+              <a href="#footer" className="hover:underline">
                 Areas We Serve
               </a>
             </li>
@@ -131,14 +128,14 @@ function Header() {
             </a>
           </li>
           <hr className="w-[90%] m-0 p-0" />
-          {/* <li>
+          <li>
             <a href="/industries" className="">
               Industries
             </a>
           </li>
-          <hr className="w-[90%] m-0 p-0" /> */}
+          <hr className="w-[90%] m-0 p-0" />
           <li>
-            <a href="/Have" className="">
+            <a href="/locations" className="">
               Areas We Serve
             </a>
           </li>
@@ -150,12 +147,12 @@ function Header() {
           </li>
           <hr className="w-[90%] m-0 p-0" />
         </ul>
-        {/* <Button
+        <Button
           href="/login"
           className="bg-gradient-to-r from-[#00BCFF] to-[#007FFF] text-white px-4 py-2 rounded-md mt-6"
         >
           Client Login
-        </Button> */}
+        </Button>
       </nav>
     </header>
   );

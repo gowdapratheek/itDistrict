@@ -42,6 +42,7 @@ function Home() {
             muted
             onEnded={() => setVideoEnded(true)}
           />
+
         </div>
 
         {/* Carousel Images */}
@@ -70,7 +71,7 @@ function Home() {
               </h1>
               <div className="flex lg:w-1/3 w-full justify-around">
                 <a
-                  href="/services"
+                  href="#services"
                   className="cursor-pointer border border-[#00BCFF] w-[45%] text-sm lg:text-base py-2 bg-gradient-to-r from-[#00BCFF] to-[#007FFF] rounded-md text-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-white"
                 >
                   IT ASSESSMENT
