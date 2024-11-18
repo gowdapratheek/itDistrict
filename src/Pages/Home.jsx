@@ -3,6 +3,7 @@ import AboutUs from "./AboutUs";
 import Have from "./Have";
 import WhyChooseUs from "./WhyChooseUs";
 import Services from "./Services";
+import ContactForm from "@/components/ContactForm";
 
 const images = [
   { img: "/1.jpg", title: "Professional IT services" },
@@ -112,6 +113,7 @@ function Home() {
         <WhyChooseUs />
         <Services />
         <AboutUs />
+        <ContactForm/>
       </div>
     </>
   );
