@@ -90,7 +90,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="/form" className="hover:underline">
+              <a href="#form" className="hover:underline">
                 Contact Us
               </a>
             </li>
@@ -116,32 +116,32 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="/about" className="">
+            <a href="#about" className="">
               About Us
             </a>
           </li>
           <hr className="w-[90%] m-0 p-0" />
 
           <li>
-            <a href="/services" className="">
+            <a href="#services" className="">
               Services
             </a>
           </li>
           <hr className="w-[90%] m-0 p-0" />
           <li>
-            <a href="/industries" className="">
+            <a href="#industries" className="">
               Industries
             </a>
           </li>
           <hr className="w-[90%] m-0 p-0" />
           <li>
-            <a href="/locations" className="">
+            <a href="#locations" className="">
               Areas We Serve
             </a>
           </li>
           <hr className="w-[90%] m-0 p-0" />
           <li>
-            <a href="/form" className="">
+            <a href="#form" className="">
               Contact Us
             </a>
           </li>

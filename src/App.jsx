@@ -3,7 +3,6 @@ import Header from "./components/Header.jsx";
 import Home from "./Pages/Home.jsx";
 
 import Footer from "./components/Footer.jsx";
-import ContactForm from "./components/ContactForm.jsx";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/form" element={<ContactForm />} />
         </Routes>
         <Footer />
       </div>

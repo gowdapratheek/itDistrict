@@ -61,7 +61,7 @@ const ContactForm = () => {
             <h2 className="text-3xl font-bold text-[#00BCFF] mb-6 text-center">
               Contact Us
             </h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id="form">
               <div className="mb-6">
                 <label
                   className="block text-sm font-medium text-gray-700"

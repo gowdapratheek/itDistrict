@@ -1,11 +1,11 @@
 import logo from "../assets/it-logo.png";
 import { Link } from "react-router-dom";
- const scrollToTop = () => {
-   window.scrollTo({
-     top: 50, // Scroll to the top of the page
-     behavior: "smooth", // Enable smooth scrolling
-   });
- };
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 50, // Scroll to the top of the page
+    behavior: "smooth", // Enable smooth scrolling
+  });
+};
 export default function Footer() {
   return (
     <footer
@@ -26,7 +26,7 @@ export default function Footer() {
               <p>Canada</p>
             </div>
             <Link
-              to="/form"
+              to="#form"
               onClick={scrollToTop}
               className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
             >

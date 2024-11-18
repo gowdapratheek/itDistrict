@@ -4,7 +4,7 @@ export default function AboutUs() {
   return (
     <div id="about" className="min-h-screen bg-gradient-to-b from-[#aee1ff] to-[#FCFCFC] flex items-center justify-center p-8">
       <div className="max-w-[80vw] lg:max-w-[60vw] w-full">
-        <h1 className="text-6xl md:text-7xl font-bold text-white m-0 p-0 -ml-10">
+        <h1 className="text-6xl md:text-7xl font-bold text-white m-0 p-0 -ml-10 mb-6">
           Who are we
         </h1>
         <div className="bg-gradient-to-r from-[#00BCFF] to-[#007FFF] rounded-md p-4 shadow-[0px_0px_60px_grey]">
