@@ -34,13 +34,13 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="tel:+1(587) 956-7985" className="hover:underline">
-              +1(587) 956-7985
+            <a href="tel:+1(587) 596-7985" className="hover:underline">
+              +1(587) 596-7985 
             </a>
           </li>
           <li>
-            <a href="mailto:support@itdistrict.com" className="hover:underline">
-              support@itdistrict.com
+            <a href="mailto:Support@theitdistrict.com" className="hover:underline">
+              Support@theitdistrict.com
             </a>
           </li>
         </ul>
