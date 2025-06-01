@@ -17,8 +17,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwuGoD7purQDJTC77H_kq1aZUO96qFlb6JNPiAfpDzs6ykalp6eCsDlWf9KH2g_3d9E-g/exec"; // Replace with your Apps Script URL
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzxne2Sc9vVC3fuS6uOuZKGktPNWdMp0SBk9418bbVXgrpCD5V4VLYe3IJTqJyJZLGH/exec"; // Replace this with your new Google Apps Script URL
 
     try {
       const response = await fetch(scriptURL, {
