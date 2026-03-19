@@ -9,51 +9,77 @@ const ContactForm = () => {
     message: "",
   });
   const [responseMessage, setResponseMessage] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const scriptURL = "https://script.google.com/macros/s/AKfycbzxne2Sc9vVC3fuS6uOuZKGktPNWdMp0SBk9418bbVXgrpCD5V4VLYe3IJTqJyJZLGH/exec"; // Replace this with your new Google Apps Script URL
+    if (loading) return;
+
+    // Use the latest script URL provided
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwL8nznxAOAn7cjJr4zcT31acGyiQqABLE0jbK1Iq-8PJsmksTPUEQwNNKtKDcDshkBkg/exec";
+
+    setLoading(true);
+    setResponseMessage("");
+    setIsSuccess(false);
 
     try {
+      // CORS mode allows us to read the response if the script returns MimeType.JSON
       const response = await fetch(scriptURL, {
         method: "POST",
         body: new URLSearchParams(formData),
       });
+
+      if (!response.ok) {
+        throw new Error(`Server returned status ${response.status}`);
+      }
+
       const result = await response.json();
+
       if (result.result === "success") {
+        setIsSuccess(true);
         setResponseMessage("Form submitted successfully!");
-        setFormData({ name: "", email: "", message: "" }); 
+        setFormData({ name: "", email: "", message: "" });
         setTimeout(() => {
-          navigate("/"); 
+          navigate("/");
         }, 3000);
+      } else {
+        throw new Error(result.error || "Submission failed on server.");
       }
     } catch (error) {
-      console.error("Error!", error.message);
-      setResponseMessage("Submission failed. Please try again.");
+      console.error("Submission Error:", error);
+      setIsSuccess(false);
+
+      if (error instanceof SyntaxError) {
+        setResponseMessage("Configuration Error: Ensure your Apps Script returns JSON and is deployed for 'Anyone'.");
+      } else {
+        setResponseMessage(error.message || "Submission failed. Please try again.");
+      }
+    } finally {
+      setLoading(false);
     }
   };
 
   useEffect(() => {
-    if (responseMessage === "Form submitted successfully!") {
+    if (isSuccess) {
       // Scroll to the top of the page when the form is successfully submitted
       window.scrollTo(0, 0);
     }
-  }, [responseMessage]);
+  }, [isSuccess]);
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="max-w-lg w-full mx-auto p-8 bg-white shadow-lg rounded-lg mt-16 mb-16">
-        {responseMessage === "Form submitted successfully!" ? (
-          <div className="text-center">
-            <h2 className="text-2xl font-bold mb-4 text-green-600">
+        {isSuccess ? (
+          <div className="text-center font-bold">
+            <h2 className="text-2xl mb-4 text-green-600">
               Submitted successfully!
             </h2>
-            <p>You will be redirected to the home page shortly...</p>
+            <p className="text-gray-600">You will be redirected to the home page shortly...</p>
           </div>
         ) : (
           <>
@@ -117,15 +143,19 @@ const ContactForm = () => {
 
               <button
                 type="submit"
-                className="w-full p-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300 ease-in-out"
+                disabled={loading}
+                className={`w-full p-3 text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out ${loading
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                  }`}
               >
-                Submit
+                {loading ? "Submitting..." : "Submit"}
               </button>
             </form>
           </>
         )}
-        {responseMessage && (
-          <p className="mt-4 text-center text-green-600">{responseMessage}</p>
+        {responseMessage && !isSuccess && (
+          <p className="mt-4 text-center text-red-600">{responseMessage}</p>
         )}
       </div>
     </div>
