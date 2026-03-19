@@ -13,6 +13,7 @@ import {
   Code,
   X,
   Clock,
+  Brain,
 } from "lucide-react";
 
 const scrollToTop = () => {
@@ -305,6 +306,32 @@ const services = [
           <li>State Management (Context API)</li>
           <li>Responsive Design (Tailwind CSS)</li>
           <li>Version Control (Git, Hostinger)</li>
+        </ul>
+        <Link
+          to="/form"
+          onClick={scrollToTop}
+          className="bg-yellow-400 text-black py-2 px-8 rounded-md font-semibold  bg-[length:200%_100%] transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-[position:right_center]"
+        >
+          Request a service
+        </Link>
+      </div>
+    ),
+  },
+  {
+    icon: Brain,
+    title: "AI & Generative AI Solutions",
+    link: "#ai-solutions",
+    details: (
+      <div className="text-left flex flex-col items-center space-y-5">
+        <Brain size={100} className="mb-4" />
+        <h3 className="text-yellow-400 text-xl">AI & Generative AI Solutions</h3>
+        <ul className="text-white list-disc pl-5">
+          <li>Agentic AI Workflows & Autonomous Agents</li>
+          <li>Retrieval-Augmented Generation (RAG) Systems</li>
+          <li>Custom AI Model Development & Evaluation</li>
+          <li>End-to-End AI Projects & Enterprise Consulting</li>
+          <li>LLM Integration & Fine-tuning</li>
+          <li>AI-Powered Automation & Predictive Analytics</li>
         </ul>
         <Link
           to="/form"
