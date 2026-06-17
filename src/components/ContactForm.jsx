@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,31 +16,43 @@ const ContactForm = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  useEffect(() => {
+    // Initialize EmailJS with your public key globally
+    emailjs.init("hsT-YdfyCYNZ_w_aR");
+
+    if (isSuccess) {
+      window.scrollTo(0, 0);
+    }
+  }, [isSuccess]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (loading) return;
 
-    // Use the latest script URL provided
-    const scriptURL = "https://script.google.com/macros/s/AKfycbwL8nznxAOAn7cjJr4zcT31acGyiQqABLE0jbK1Iq-8PJsmksTPUEQwNNKtKDcDshkBkg/exec";
+    // EmailJS keys from your dashboard
+    const SERVICE_ID = "service_bf2djar";
+    const TEMPLATE_ID = "template_0yhfzmp";
 
     setLoading(true);
     setResponseMessage("");
     setIsSuccess(false);
 
     try {
-      // CORS mode allows us to read the response if the script returns MimeType.JSON
-      const response = await fetch(scriptURL, {
-        method: "POST",
-        body: new URLSearchParams(formData),
-      });
+      const templateParams = {
+        name: formData.name,
+        user_name: formData.name,
+        user_email: formData.email,
+        message: formData.message,
+      };
 
-      if (!response.ok) {
-        throw new Error(`Server returned status ${response.status}`);
-      }
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        templateParams
+      );
 
-      const result = await response.json();
-
-      if (result.result === "success") {
+      if (result.status === 200) {
         setIsSuccess(true);
         setResponseMessage("Form submitted successfully!");
         setFormData({ name: "", email: "", message: "" });
@@ -48,28 +60,21 @@ const ContactForm = () => {
           navigate("/");
         }, 3000);
       } else {
-        throw new Error(result.error || "Submission failed on server.");
+        throw new Error("Failed to send email.");
       }
     } catch (error) {
-      console.error("Submission Error:", error);
+      console.error("EmailJS Error:", error);
       setIsSuccess(false);
-
-      if (error instanceof SyntaxError) {
-        setResponseMessage("Configuration Error: Ensure your Apps Script returns JSON and is deployed for 'Anyone'.");
+      // Give more specific feedback if it's an EmailJS error
+      if (error && error.text) {
+        setResponseMessage(`Email sending failed: ${error.text}`);
       } else {
-        setResponseMessage(error.message || "Submission failed. Please try again.");
+        setResponseMessage("Submission failed. Please check your EmailJS dashboard and credentials.");
       }
     } finally {
       setLoading(false);
     }
   };
-
-  useEffect(() => {
-    if (isSuccess) {
-      // Scroll to the top of the page when the form is successfully submitted
-      window.scrollTo(0, 0);
-    }
-  }, [isSuccess]);
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -145,8 +150,8 @@ const ContactForm = () => {
                 type="submit"
                 disabled={loading}
                 className={`w-full p-3 text-white font-semibold rounded-lg shadow-md transition duration-300 ease-in-out ${loading
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
                   }`}
               >
                 {loading ? "Submitting..." : "Submit"}
